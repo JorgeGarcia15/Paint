@@ -138,6 +138,9 @@ public class VentanaDibujo extends javax.swing.JFrame {
              if (listaFormas.get(i) instanceof pincel) {
                 ((pincel) listaFormas.get(i)).pintaYColorea(g2);
             }
+            if (listaFormas.get(i) instanceof Prueba) {
+                ((Prueba) listaFormas.get(i)).pintaYColorea(g2);
+            }
         }
         //apunto al jPanel
         g2 = (Graphics2D) jPanel1.getGraphics();
