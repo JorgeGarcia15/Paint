@@ -17,6 +17,8 @@ import java.awt.Toolkit;
 import java.awt.geom.Line2D;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 /**
  *
@@ -25,7 +27,7 @@ import java.util.ArrayList;
 public class VentanaDibujo extends javax.swing.JFrame {
 
 
-   
+
     
     
     //imagen en la que pintaré los círculos
@@ -520,7 +522,7 @@ public class VentanaDibujo extends javax.swing.JFrame {
             }
         });
 
-        jSpinner3.setModel(new javax.swing.SpinnerListModel(new String[] {" Si", " No"}));
+        jSpinner3.setModel(new javax.swing.SpinnerListModel(new String[] {" No", " Si"}));
         jSpinner3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel19.setText("Degradacion");
@@ -1155,10 +1157,7 @@ public class VentanaDibujo extends javax.swing.JFrame {
         if(!jCheckBox1.isSelected()){
         relleno = true;
         }
-//        if(relleno){
-//        setCursor(cur);
-//        }
-            
+
     }//GEN-LAST:event_jCheckBox1MousePressed
 
     private void jCheckBox2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBox2MousePressed
@@ -1175,7 +1174,7 @@ public class VentanaDibujo extends javax.swing.JFrame {
          
         jPanel1.setCursor(cur);
         } else {
-        jPanel1.setCursor(null);  
+        jPanel1.setCursor(Cursor.getPredefinedCursor(CROSSHAIR_CURSOR));  
       }
       
     }//GEN-LAST:event_jToggleButton1MousePressed
